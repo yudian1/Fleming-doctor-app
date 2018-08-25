@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.project_doctor"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="18" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/doctor"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.project_doctor_activity.MainActivity"
+            android:label="@string/app_name" 
+            android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.project_doctor_activity.PatientInfoActivity"
+            android:label="@string/app_name" 
+            android:screenOrientation="landscape">
+        </activity>
+        <activity
+            android:name="com.example.project_doctor_activity.PQSIActivity"
+            android:label="@string/app_name" 
+            android:screenOrientation="landscape">
+        </activity>
+        <activity
+            android:name="com.example.project_doctor_activity.SleepnessActivity"
+            android:label="@string/app_name" 
+            android:screenOrientation="landscape">
+        </activity>
+        <activity
+            android:name="com.example.project_doctor_activity.HAMAActivity"
+            android:label="@string/app_name" 
+            android:screenOrientation="landscape">
+        </activity>
+        <activity
+            android:name="com.example.project_doctor_activity.HAMDActivity"
+            android:label="@string/app_name" 
+            android:screenOrientation="landscape">
+        </activity>
+        <activity
+            android:name="com.example.project_doctor_activity.PatientInfoSleepDiary"
+            android:label="@string/app_name" 
+            android:screenOrientation="landscape">
+        </activity>
+    </application>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+</manifest>
